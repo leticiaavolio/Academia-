@@ -28,12 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            menuStrip1 = new MenuStrip();
+            cadastroClienteToolStripMenuItem = new ToolStripMenuItem();
+            roletaDeExercíciosToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Font = new Font("Yu Gothic UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { cadastroClienteToolStripMenuItem, roletaDeExercíciosToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1168, 45);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // cadastroClienteToolStripMenuItem
+            // 
+            cadastroClienteToolStripMenuItem.Name = "cadastroClienteToolStripMenuItem";
+            cadastroClienteToolStripMenuItem.Size = new Size(230, 41);
+            cadastroClienteToolStripMenuItem.Text = "Cadastro Cliente";
+            cadastroClienteToolStripMenuItem.Click += cadastroClienteToolStripMenuItem_Click;
+            // 
+            // roletaDeExercíciosToolStripMenuItem
+            // 
+            roletaDeExercíciosToolStripMenuItem.Name = "roletaDeExercíciosToolStripMenuItem";
+            roletaDeExercíciosToolStripMenuItem.Size = new Size(149, 41);
+            roletaDeExercíciosToolStripMenuItem.Text = "Exercícios";
+            roletaDeExercíciosToolStripMenuItem.Click += roletaDeExercíciosToolStripMenuItem_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(16F, 37F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1168, 644);
+            Controls.Add(menuStrip1);
+            Font = new Font("Yu Gothic UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            MainMenuStrip = menuStrip1;
+            Margin = new Padding(7);
+            Name = "Form1";
+            Text = "Form1";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem cadastroClienteToolStripMenuItem;
+        private ToolStripMenuItem roletaDeExercíciosToolStripMenuItem;
     }
 }
